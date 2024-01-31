@@ -1,8 +1,24 @@
-def missing(list):
-    return [x for x in range(list[0],list[-1]) if x not in list]
+Find Missing numbers in give list
+Input:
+List=[2,5,7,9]
+Output:
+List=[3,4,6,8]
+
+range(list[0],list[-1])
+range(2,9)
+2,3,4,5,6,7,8
+if not in List
 
 
-list=[1,4,5,7,10]
+def miss_number(nums):
+    result=[]
+    for i in range(nums[0],nums[-1]):
+        #print(i)
+        if i not in nums:
+            result.append(i)
 
-print(missing(list))
+    return result
+
+nums=[2,5,7,9]
+print(miss_number(nums))
 
