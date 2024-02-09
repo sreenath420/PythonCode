@@ -17,5 +17,21 @@ output: {1001:'A', 1003:'A', 1002:'B', 1005:'B', 1004:'C', 1006:'C'}
 
 sorted_footballers_by_goals = sorted(footballers_goals.items(),key= lambda x:x[1])
 
+3.write python program to get repeted value
+
+li=[1,2,3,4,6,7,8,9,9,0,8,0,2,2,6,6,87,65,34,23]
+count_dict ={}
+for num in li:
+    if num in count_dict:
+        count_dict[num] +=1
+        #print(count_dict)
+    else:
+        count_dict[num] =1
+#print(count_dict)
+comm_values=[num for num,count in count_dict.items() if count==3]
+print('comm_value',comm_values)
+
+
+
 
 
