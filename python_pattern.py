@@ -97,5 +97,45 @@ step -4  here i value is 2
 step -5  here i value is 1
          j: range(1,1) 1
          print(i) 1               
+--------------------------------------------------------Program-5 ----------------------------------------------------------------------------------------
+
+1 1 1 1 1  
+2 2 2 2  
+3 3 3  
+4 4  
+5 
+
+u=0
+for i in range(5,0,-1): #11 8 5
+    u +=1
+    #print(u)
+    for j in range(1,i+1):
+        print(u,end=' ')
+    print(' ')
+
+
+
+step :-1 i in range(5,0,-1) ----> 5
+          u  +=1 --> u is 1 here
+         j in range(1,6) -->(1,2,3,4,5)
+           print(u,end=' ') --> 1 1 1 1 1
+          
  
-  
+step :-2 i in range(5,0,-1) ----> 4
+          u  +=1 --> u is 2 here
+         j in range(1,5) -->(1,2,3,4)
+           print(u,end=' ') --> 2 2 2 2
+           
+step :-3 i in range(5,0,-1) ----> 3
+          u  +=1 --> u is 3 here
+         j in range(1,4) -->(1,2,3)
+           print(u,end=' ') --> 3 3 3
+           
+step :-4 i in range(5,0,-1) ----> 2
+          u  +=1 --> u is 2 here
+         j in range(1,3) -->(1,2)
+           print(u,end=' ') --> 4 4
+step :-5 i in range(5,0,-1) ----> 1
+          u  +=1 --> u is 1 here
+         j in range(1,2) -->(1)
+           print(u,end=' ') --> 5
