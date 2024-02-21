@@ -203,3 +203,74 @@ step:4  i value is 4,
        j value is 1,2,3,4
        * print 4 times here * * * *
 
+
+------------------------------------------Program 8------------------------------
+5 5 5 5 5 
+5 5 5 5 
+5 5 5 
+5 5 
+5
+
+for i in range(6,1,-1):
+    for j in range(1,i):
+	    print(5,end=" ")
+    print(' ')
+------------------------------------------Program 9------------------------------
+1 
+2 1 
+3 2 1 
+4 3 2 1 
+5 4 3 2 1
+
+for i in range(1,6):
+    for j in range(i,0,-1):
+        print(j,end=" ")
+    print(' ')	
+	
+step 1 --> i:-- range(1,6)-1,2,3,4,5
+            here j value is 1
+          print(j)-->1
+      
+step -2  here i value is 2
+         j:-- range(2,0)-->2,1
+         print(j) 2 1
+step -3  here i value is 3
+         j:-- range(3,0) -->3,2,1
+         print(j)3 2 1
+step -4  here i value is 4
+         j: range(4,0) 4,3,2,1
+         print(j) 4 3 2 1 
+step -5  here i value is 5
+         j: range(5,0) 5,4,3,2,1
+         print(j) 5 4 3 2 1
+------------------------------------------Program 10------------------------------
+
+5 4 3 2 1
+4 3 2 1
+3 2 1
+2 1
+1
+
+
+for i in range(5,0,-1):
+    for j in range(i,0,-1):
+        print(j,end=' ')
+    print()
+	
+	
+step 1 --> i:-- range(5,0)-5,4,3,2,1
+            here j value is 5
+          print(j)-->5 4 3 2 1
+      
+step -2  here i value is 4
+         j:-- range(4,0)-->4,3,2,1
+         print(j) -->4 3 2 1 
+step -3  here i value is 3
+         j:-- range(3,0) -->3,2,1
+         print(j)3 2 1
+step -4  here i value is 2
+         j: range(2,0) 2,1
+         print(j) 2 1 
+step -5  here i value is 1
+         j: range(1,0) 1
+         print(j) 1
