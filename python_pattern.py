@@ -428,3 +428,132 @@ step:5 ----> i in range(65,70)
             print(chr(i),end=' ') 
            E E E E E
       
+
+---------------------------------------program 14--------------------------------------------------
+1  
+2  4  
+3  6  9  
+4  8  12  16  
+5  10  15  20  25  
+6  12  18  24  30  36  
+7  14  21  28  35  42  49  
+8  16  24  32  40  48  56  64
+
+
+   
+   
+for i in range(1,9):
+    for j in range(1,i+1):
+        print(i*j,end=' ')
+    print('\n')   
+    
+ 
+step-1: i =1
+        j here is range(1,2)-->1
+        print(i*j)--> 1*1  1
+        
+     1
+     
+
+step-2: i =2
+        j here is range(1,3)-->1 2
+        print(i*j)--> 1*2 & 2*2 
+      2 4
+      
+step-3: i =3
+        j here is range(1,4)-->1 2 3
+        print(i*j)--> 1*3 & 2*3 & 3*3
+        3 6 9
+        
+step-4: i =4
+        j here is range(1,5)-->1 2 3 4
+        print(i*j)--> 1*4 & 2*4 & 3*4 & 4*4
+        4 8 12 16
+        
+step-5: i =5
+        j here is range(1,6)-->1 2 3 4 5
+        print(i*j)--> 1*5 & 2*5 & 3*5 & 4*5 & 5*5
+        5 10 15 20 25 
+     
+step-6: i =6
+        j here is range(1,7)-->1 2 3 4 5 6
+        print(i*j)--> 1*6 & 2*6 & 3*6 & 4*6 & 5*5 & 5*6
+        6 12 18 24 30 36
+        
+step-7: i =7
+        j here is range(1,7)-->1 2 3 4 5 6 7
+        print(i*j)--> 1*7 & 2*7 & 3*7 & 4*7 & 5*7 & 6*7 & 7*7
+        7 14 21 28 35 42 49
+        
+step-8: i =8
+        j here is range(1,7)-->1 2 3 4 5 6 7 8
+        print(i*j)--> 1*8 & 2*8 & 3*8 & 4*8 & 5*8 & 6*8 & 7*8 & 8*8
+        8 16 24 36 44 50 58 64
+---------------------------------------program 15--------------------------------------------------
+1 2 3 4
+1 2 3 4
+1 2 3 4
+1 2 3 4
+
+
+for i in range(1,5):
+    for j in range(1,5):
+        print(j,end=' ')
+    print(' ')
+    
+step-1:- i =1
+       j here range(1,5)
+       print(j) 1 2 3 4
+step-2:- i =2
+       j here range(1,5)
+       print(j) 1 2 3 
+       
+step-3:- i =3
+       j here range(1,5)
+       print(j) 1 2 3 4
+       
+step-4:- i =4
+       j here range(1,5)
+       print(j) 1 2 3 4
+---------------------------------------program 16--------------------------------------------------
+* * * * *
+* * * *
+* * *
+* *
+*
+
+for i in range(6,0,-1):
+    for j in range(i):
+        print('*',end=' ')
+    print(' ')
+    
+step-1: i=6
+       j here range(i) ---->6 means * * * * * *
+       print('*'end=' ')
+     * * * * * *
+     
+     
+step-2: i=5
+       j here range(i) ---->5 means * * * * * 
+       print('*'end=' ')
+     * * * * * 
+     
+step-3: i=4
+       j here range(i) ---->5 means * * * * 
+       print('*'end=' ')
+     * * * * 
+     
+step-4: i=3
+       j here range(i) ---->5 means * * * 
+       print('*'end=' ')
+     * * * 
+     
+step-5: i=2
+       j here range(i) ---->5 means * * 
+       print('*'end=' ')
+     * * 
+
+step-5: i=1
+       j here range(i) ---->5 means *  
+       print('*'end=' ')
+     * 
