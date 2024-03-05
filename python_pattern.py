@@ -557,3 +557,52 @@ step-5: i=1
        j here range(i) ---->5 means *  
        print('*'end=' ')
      * 
+
+---------------------------------------program 17--------------------------------------------------
+
+
+for i in range(1,6):
+    for j in range(1,6):
+        if i==1 or i==6-1 or j==1 or j==6-1: 
+            print('*',end='')
+        else:
+            print(' ',end='')
+    print()
+	
+	
+	
+
+step 1:- i range(1,6): i------->1
+         j range(1,6): j-------> 1,2,3,4,5
+		 if i==1 or i==6-1 or j==1 or j==6-1:
+          here i is 1 so we are getting * * * * and j==1 we are getting *
+		  it will be print this line 
+		  * * * * *
+		  
+step 2:- i range(1,6): i------->2
+         j range(1,6): j-------> 1,2,3,4,5
+		 if i==1 or i==6-1 or j==1 or j==6-1:
+		 here i is 2 so we are getting  and j==1 and j==5 we are getting *
+		 it will be print this line
+		 *       *
+step 3:- i range(1,6): i------->3
+         j range(1,6): j-------> 1,2,3,4,5
+		 if i==1 or i==6-1 or j==1 or j==6-1:
+		 here i is 3 so we are getting  and j==1 and j==5 we are getting *
+		 it will be print this line
+		 *       *
+step 4:- i range(1,6): i------->4
+         j range(1,6): j-------> 1,2,3,4,5
+		 if i==1 or i==6-1 or j==1 or j==6-1:
+		 here i is 4 so we are getting  and j==1 and j==5 we are getting *
+		 it will be print this line
+		 *       *
+		 
+step 5:- i range(1,6): i------->5
+         j range(1,6): j-------> 1,2,3,4,5
+		 if i==1 or i==6-1 or j==1 or j==6-1:
+		 here i is 5 so we are getting  and j==1 and j==5 we are getting *
+		 it will be print this line
+		 * * * * *
+		 
+		 
