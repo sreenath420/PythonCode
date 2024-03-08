@@ -604,5 +604,71 @@ step 5:- i range(1,6): i------->5
 		 here i is 5 so we are getting  and j==1 and j==5 we are getting *
 		 it will be print this line
 		 * * * * *
-		 
+
+   ------------------------------------------Program 18------------------------------------------------------------------------------------
+               1
+	    1  2
+        1  2   3
+      1 2  3   4
+    1 2 3  4   5
+ 
+ 
+ 
+ 
+ for i in range(1,6):
+    u = 1
+
+    for j in range(6,0,-1):
+
+        if j>i:
+            print(' ',end=' ')
+        else:
+            print(u,end=' ')
+            u +=1
+    print(' ')
+    
+  
+  
+step:-1 i is here 1 
+   u =1
+   j here range(6,0,-1) 6 5 4 3 2 1
+   a)6>1(j>i)---->here j>i is true so one space print
+   b)5>1(j>i)---->here j>i is true so one space print
+   c)4>1(j>i)---->here j>i is true so one space print
+   d)3>1(j>i)---->here j>i is true so one space print
+   e)2>1(j>i)---->here j>i is true so one space print
+   f)1>1 is false so else statement going to print here so we can u value inside the else stament that is going to be 1 after 5 blank spaces
+                             1
+   
+
+ step:-2 i is here 2
+   u =1
+   j here range(6,0,-1) 5 4 3 2 1
+   a)5>2(j>i)---->here j>i is true so one space print
+   b)4>2(j>i)---->here j>i is true so one space print
+   c)3>2(j>i)---->here j>i is true so one space print
+   d)2>2(j>i)---->here is false so else statment going to print is u=1 so print u one after 4 space 1  
+   e)1>2(j>i)---->here is false so else stament going to print inside else u have given value u +=1 so u value going to be 2
+                        1 2
+step:-3 i is here 3
+   u =1
+   j here range(6,0,-1)  4 3 2 1
+   a)4>3(j>i)---->here j>i is true so one space print
+   b)3>3(j>i)---->here j>i false so else statement going to print is u=1 so print u one after 3 space 1 
+   c)2>3(j>i)---->here j>i false so else stament going to print inside else u have given value u +=1 so u value going to be 2
+   d)1>3(j>i)---->here j>i false so else stament going to print inside else u have given value u +=1 so u value going to be 3
+   
+                      1 2 3
+step:-4 i is here 4
+   u =1
+   j here range(6,0,-1)  3 2 1
+   a)4>4(j>i)---->here j>i false so else statement going to print is u=1 so print u one after 3 space 1
+   b)3>3(j>i)---->here j>i false so else stament going to print inside else u have given value u +=1 so u value going to be 2
+   c)2>3(j>i)---->here j>i false so else stament going to print inside else u have given value u +=1 so u value going to be 3
+   d)1>3(j>i)---->here j>i false so else stament going to print inside else u have given value u +=1 so u value going to be 4
+   
+                      1 2 3 4
+   
+   
+
 		 
