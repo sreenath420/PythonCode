@@ -1,3 +1,4 @@
+---------------------------------------------------------------------------------------------------------------------------------------------
 1.Remove Duplicate values in given list 
 
 list=[1,2,4,4,5,6,6,7,7]
@@ -9,14 +10,14 @@ for i in list:
    if i not in result:
       result.append(i)
 return result
-
+-----------------------------------------------------------------------------------------------------------------------------------------------
 2.Write a python function dict_sort_by_value(dict) so that for given dictionary, it will return the dictionary with sort by value.
 example 
 input: dict = {1001:'A', 1002:'B', 1003:'A', 1004:'C',  1005:'B',   1006:'C'}
 output: {1001:'A', 1003:'A', 1002:'B', 1005:'B', 1004:'C', 1006:'C'}
 
 sorted_footballers_by_goals = sorted(footballers_goals.items(),key= lambda x:x[1])
-
+--------------------------------------------------------------------------------------------------------------------------------------------------
 3.write python program to get repeted value which value repeatec 3 times here
 output:-
 comm_value [2, 6]
@@ -32,6 +33,19 @@ for num in li:
 #print(count_dict)
 comm_values=[num for num,count in count_dict.items() if count==3]
 print('comm_value',comm_values)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+4.write python repeat the letter give string
+word="fdcaagahaajqaa"
+counter={}
+for letter in word:
+    if letter not in counter:
+        counter[letter]=0
+    counter[letter] +=1
+print(counter)
+o/p
+{'f': 1, 'd': 1, 'c': 1, 'a': 7, 'g': 1, 'h': 1, 'j': 1, 'q': 1}
+
 
 
 
