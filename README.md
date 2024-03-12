@@ -1,4 +1,4 @@
 # PythonCode
 python coding problems
 
-basic_program.py ----> factioral problme
+basic_program.py ----> factioral problem
