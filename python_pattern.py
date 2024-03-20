@@ -689,3 +689,42 @@ for i in range(5):
             print(' ',end=' ')
     print()
 
+-------------------------------------------------program 20 -----------------------------------------------------------------------------
+
+1  
+1 1  
+1 2 1  
+1 3 3 1  
+1 4 6 4 1 
+
+for i in range(5):
+    num=1
+    for j in range(1,i+2):
+        print(num,end=" ")
+        num=num*(i+1-j)//j
+    print(' ')
+
+
+
+
+for i in range(5) : This loop iterates over each row of the pattern.it goes from 0 to rows -1
+num =i: initalize the variable num to 1 for each row. This variable will hold the numbers to be printed on each row.
+for j in range(1,i+2): this loop iterates over each column in the current row.it goes from 1 to i+1
+print(num,end=" ") prints the value of num without a newline character this ensure that all numbers in the same row are printed on the same line
+num = num*(i+j-j)//j: this line updates the value of num for the next column it calcuates the next number in the row based on the previous number using the formula (i+1-)//j this 
+formula generates pascals triangle pattern.
+
+
+
+-----------------------------------------------------program 21----------------------------------------------------------------------------------
+
+0 
+1 *
+2 **
+3 ***
+4 ****
+5 *****
+
+
+for i in range(6):
+    print(i,"*"*i)
