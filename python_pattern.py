@@ -748,3 +748,19 @@ for i in range(0,7):
         else:
             print(' ',end=' ')
     print()
+
+
+-------------------------------------------------->program 23<----------------------------------------------------------------------------------
+
+E D C B A 
+ D C B A 
+  C B A 
+   B A 
+    A 
+
+for i in range(5):
+    for j in range(i):
+        print(" ",end="")
+    for k in range(5-i):
+        print(chr(69-i-k),end=' ')
+    print()
