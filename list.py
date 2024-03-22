@@ -62,6 +62,63 @@ Ujjwala
 For
 
 
+Getting the size of Python list
+
+# Creating a List
+List1 = []
+print(len(List1))
+
+                                  Taking Input of a Python List
+                                  
+                                  
+# Python program to take space
+# separated input as a string
+# split and store it to a list
+# and print the string list
+
+# input the list as string
+string = input("Enter elements (Space-Separated): ")
+
+# split the strings and store it to a list
+lst = string.split() 
+print('The list is:', lst) # printing the list
+
+strip function
+Remove spaces at the beginning and at the end of the string:
+
+
+
+append 
+just add the value at end of the list
+List = []
+print("Initial blank List: ")
+print(List)
+ 
+# Addition of Elements
+# in the List
+List.append(1)
+List.append(2)
+List.append(4)
+print("\nList after Addition of Three elements: ")
+print(List)
+
+insert 
+
+if you using insert we need mention postion and value 
+like below
+Syntax. list.insert(pos, elmnt)
+
+
+List = [1,2,3,4]
+print(List)
+
+List.insert(3,5)
+List.insert(0,'sreenath')
+print(List)
+output
+[1, 2, 3, 4]
+['sreenath', 1, 2, 3, 5, 4]
+
 sample program
 --------------------------------------------------------
 Adding
@@ -82,3 +139,31 @@ for i in list:
     result=result*i
 print(result)
 
+
+ -------------------------------------------Reversing a list----------------------------------------------------------
+mylist = [1, 2, 3, 4, 5, 'Geek', 'Python']
+mylist.reverse()
+print(mylist)
+
+['Python','Geek',5,4,3,2,1]
+
+----------------------------------------------------------------------------------------------------------------
+words=['abc','xyz','aba','1221']
+
+Write a Python program to count the number of strings from a given list of strings. The string length is 2 or more and the first and last characters are the same.
+
+
+
+words=['abc','xyz','aba','1221','ujjawalau']
+def match_words(words):
+       ctr=0
+       for word in words:
+           if len(word) >1 and word[0]==word[-1]:
+               ctr +=1
+       return ctr
+
+
+print(match_words((words)))
+
+ouput
+3
