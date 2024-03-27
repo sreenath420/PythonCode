@@ -764,3 +764,25 @@ for i in range(5):
     for k in range(5-i):
         print(chr(69-i-k),end=' ')
     print()
+
+------------------------------------------------>Program 24<---------------------------------------------------------------------------------------
+
+
+* 1 * 2 * 
+3 * 4 * 5 
+* 6 * 7 * 
+8 * 9 * 10 
+* 11 * 12 * 
+
+
+k=1
+counter=1
+for i in range(5):
+    for j in range(5):
+        if k % 2 == 0:
+            print(counter, end = ' ')
+            counter+=1
+        else:
+            print('*',end=' ')
+        k+=1
+    print()
