@@ -119,6 +119,72 @@ output
 [1, 2, 3, 4]
 ['sreenath', 1, 2, 3, 5, 4]
 
+--------------------------------->Reversing a List<------------------------------------------------------
+mylist = [1, 2, 3, 4, 5, 'Sreenath', 'Ujjwala']
+mylist.reverse()
+print(mylist)
+The reversed() function returns a reverse iterator, which can be converted to a list using the list() function
+
+OUTPUT
+['Ujjwala', 'Sreenath', 5, 4, 3, 2, 1]
+	
+my_list = [1, 2, 3, 4, 5]
+reversed_list = list(reversed(my_list))
+print(reversed_list)
+
+[5, 4, 3, 2, 1]
+
+
+Using remove() method
+
+
+Elements can be removed from the List by using the built-in remove() function but an Error arises if the element doesn’t exist in the list. Remove() method only removes one element at a time, to remove a range of elements, the iterator is used. The remove() method removes the specified item.
+
+# Creating a List
+List = [1, 2, 3, 4, 5, 6,
+        7, 8, 9, 10, 11, 12]
+print("Initial List: ")
+print(List)
+ 
+# Removing elements from List
+# using Remove() method
+List.remove(5)
+List.remove(6)
+print("\nList after Removal of two elements: ")
+print(List)
+
+Initial List: 
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+List after Removal of two elements: 
+[1, 2, 3, 4, 7, 8, 9, 10, 11, 12]
+
+Method 2: Using pop() method
+
+
+pop() function can also be used to remove and return an element from the list, but by default it removes only the last element of the list, to remove an element from a specific position of the List, the index of the element is passed as an argument to the pop() method.
+
+List = [1, 2, 3, 4, 5]
+
+# Removing element from the
+# Set using the pop() method
+List.pop()
+print("\nList after popping an element: ")
+print(List)
+
+# Removing element at a
+# specific location from the
+# Set using the pop() method
+List.pop(2)
+print("\nList after popping a specific element: ")
+print(List)
+
+List after popping an element: 
+[1, 2, 3, 4]
+
+List after popping a specific element: 
+[1, 2, 4]
+
 sample program
 --------------------------------------------------------
 Adding
@@ -167,3 +233,5 @@ print(match_words((words)))
 
 ouput
 3
+
+
