@@ -234,4 +234,18 @@ print(match_words((words)))
 ouput
 3
 
+list1 = [1, 2, 3, 4, 4, 7]
+list2 = [1, 2, 3, 7, 8,13]
+#Ouput: [1, 2, 3, 7]
+
+restult = []
+
+for i in list1:
+    if i in list2:
+        restult.append(i)
+print(restult)
+o/p
+--------------------------------------------------
+[1, 2, 3, 7]
+
 
