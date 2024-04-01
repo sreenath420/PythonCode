@@ -185,6 +185,134 @@ List after popping an element:
 List after popping a specific element: 
 [1, 2, 4]
 
+
+                                                                    Slicing of a List
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+													
+
+The format for list slicing is [start:stop:step].
+
+start is the index of the list where slicing starts.
+stop is the index of the list where slicing ends.
+step allows you to select nth item within the range start to stop.
+
+my_list = [1, 2, 3, 4, 5]
+
+print(my_list[:])
+
+my_list = [1, 2, 3, 4, 5]
+
+print(my_list[2:])
+
+my_list = [1, 2, 3, 4, 5]
+
+print(my_list[:2])
+
+my_list = [1, 2, 3, 4, 5]
+
+print(my_list[2:4])
+
+my_list = [1, 2, 3, 4, 5]
+
+print(my_list[::2])
+
+
+my_list = [1, 2, 3, 4, 5]
+
+print(my_list[::-2])
+
+my_list = [1, 2, 3, 4, 5]
+
+print(my_list[1:4:2])
+
+
+output
+
+[1, 2, 3, 4, 5]
+[3, 4, 5]
+[1, 2]
+[3, 4]
+[1, 3, 5]
+[5, 3, 1]
+[2, 4]
+
+# Python program to demonstrate
+# Removal of elements in a List
+
+# Creating a List
+List = ['G', 'E', 'E', 'K', 'S', 'F',
+		'O', 'R', 'G', 'E', 'E', 'K', 'S']
+print("Initial List: ")
+print(List)
+Sliced_List = List[:]
+print("\nPrinting all elements using slice operation: ")
+print(Sliced_List)
+
+# Print elements of a range
+# using Slice operation
+Sliced_List = List[3:8]
+#k,s,o,r
+print("\nSlicing elements in a range 3-8: ")
+print(Sliced_List)
+
+Sliced_List = List[5:]
+#
+print("\nElements sliced from 5th "
+	"element till the end: ")
+print(Sliced_List)
+
+Initial List: 
+['G', 'E', 'E', 'K', 'S', 'F', 'O', 'R', 'G', 'E', 'E', 'K', 'S']
+
+Printing all elements using slice operation: 
+['G', 'E', 'E', 'K', 'S', 'F', 'O', 'R', 'G', 'E', 'E', 'K', 'S']
+
+Slicing elements in a range 3-8: 
+['K', 'S', 'F', 'O', 'R']
+
+Elements sliced from 5th element till the end: 
+['F', 'O', 'R', 'G', 'E', 'E', 'K', 'S']
+
+
+
+# Creating a List
+List = ['G', 'E', 'E', 'K', 'S', 'F',
+		'O', 'R', 'G', 'E', 'E', 'K', 'S']
+print("Initial List: ")
+print(List)
+
+# Print elements from beginning
+# to a pre-defined point using Slice
+Sliced_List = List[:-6]
+print("\nElements sliced till 6th element from last: ")
+print(Sliced_List)
+
+#Print elements of a range
+# using negative index List slicing
+Sliced_List = List[-6:-1]
+print("\nElements sliced from index -6 to -1")
+print(Sliced_List)
+
+# Printing elements in reverse
+# using Slice operation
+Sliced_List = List[::-1]
+print("\nPrinting List in reverse: ")
+print(Sliced_List)
+
+
+C:\Users\ananya\PycharmProjects\pythonProject\venv\Scripts\python.exe C:\Users\ananya\PycharmProjects\pythonProject\venv\Scripts\list.py 
+Initial List: 
+['G', 'E', 'E', 'K', 'S', 'F', 'O', 'R', 'G', 'E', 'E', 'K', 'S']
+
+Elements sliced till 6th element from last: 
+['G', 'E', 'E', 'K', 'S', 'F', 'O']
+
+Elements sliced from index -6 to -1
+['R', 'G', 'E', 'E', 'K']
+
+Printing List in reverse: 
+['S', 'K', 'E', 'E', 'G', 'R', 'O', 'F', 'S', 'K', 'E', 'E', 'G']
+
 sample program
 --------------------------------------------------------
 Adding
@@ -249,3 +377,14 @@ o/p
 [1, 2, 3, 7]
 
 
+
+list=['Ujjwala','and','sreenath','are','best','friends']
+
+#Ouput:
+#'Ujjwala and sreenath are best friends'
+str=''
+for i in list:
+    str +=i+' '
+print(str)
+
+Ujjwala and sreenath are best friends 
