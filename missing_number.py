@@ -21,3 +21,13 @@ def miss_number(nums):
 
 nums=[2,5,7,9]
 print(miss_number(nums))
+
+
+by using list comparehension
+
+list=[2,5,7,9]
+
+my_list=[num for num in range(list[0],list[-1]) if num not in list]
+print(my_list)
+
+
