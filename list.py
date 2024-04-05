@@ -388,3 +388,37 @@ for i in list:
 print(str)
 
 Ujjwala and sreenath are best friends 
+
+
+Remove all occurrence of a given item from the list
+list=[0,10,2,10,4,2,10]
+result=[]
+for i in list:
+    if i!=10 and i!=2:
+        
+        result.append(i)
+print(result)
+
+list=[0,10,2,10,4,2,10]
+
+my_list=[num for num in list if num!=10 and num!=2]
+print(my_list)
+
+[0,4]
+
+Remove all the empty strings from the list.
+
+list=["Hello","Logical","","","Python"]
+result=[]
+for num in list:
+    if num!="":
+        result.append(num)
+print(result)
+
+['Hello', 'Logical', 'Python']
+
+list=["Hello","Logical","","","Python"]
+my_list=[num for num in list if num!=""]
+print(my_list)
+
+['Hello', 'Logical', 'Python']
