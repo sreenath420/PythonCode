@@ -131,3 +131,23 @@ print(val)
 
 output:-
 [(4, 5), (4,), (8, 6, 7), (3, 4, 6, 7)]
+
+
+
+tup = (1, 2, 3, 4, 3, 5)
+#Remove 3 from given list
+tu=3
+x=[x for x in tup if x!=tu ]
+print(x)
+output
+
+[1, 2, 4, 5]
+
+
+tup = ('H', 'e', 'l', 'l', 'o')
+tu="".join(tup)
+
+print(tu)
+Join:-all items in a tuple into a string, using a hash character as separator
+ouput
+Hello
