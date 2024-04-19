@@ -99,3 +99,24 @@ Q: sort the words in alphabetic
 Words="This is my sentence"
 Out="is my sentence this"
 
+
+num='123'
+print(num.isdigit())
+
+True
+
+
+string="hello"
+repeated=0
+repated_char=[]
+for i in string:
+
+    if(string.count(i)>1) and (i not in repated_char):
+        repeated +=1
+        repated_char.append(i)
+print(repated_char)
+print(repeated)
+
+output:-
+['l']
+1
