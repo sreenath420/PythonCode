@@ -84,6 +84,32 @@ array = [3, 6, 2, 8, 10, 5,15]
 max_pair_sum = largest_pair_sum(array)
 print("Largest pair sum:", max_pair_sum)
 
+------------------------------------------------------------>count the words<------------------------------------------------------------------------------------
+phrase = "big black bug bit a big black dog on his on big black nose"
+words=phrase.split()
+print(words)
+
+word_count={}
+
+for word in words:
+        if word in word_count:
+                word_count[word] +=1
+
+                #print(word_count)
+        else:
+                word_count[word]=1
+for val,count in word_count.items():
+        print(val,count)
+---------------------------------------------->output<--------------------------------------------------------------------
+big 3
+black 3
+bug 1
+bit 1
+a 1
+dog 1
+on 2
+his 1
+nose 1
 
 
 
