@@ -112,6 +112,47 @@ his 1
 nose 1
 
 
+----------------------------------------->problem<--------------------------------------------------------------------
+you are given an array of N inetegers. you want to split them into N/2 pairs in such a way that the sum of integers in each pair is odd. N is even and every element of the array
+must be present in exactly one pair
+you task is to determine whether it is possible to split the numbers into such pairs.for example,given[2,7,4,6,3,1], The answer is True
+one of the possible sets of pairs is (2,7),(6,3) and (4,1) Theirs sums are respectively 9,9 and 5 all of which are odd.
+
+example
+1.given A=[2,,7,4,6,3,1] the function should return True,
+2.given A=[1,1] the function should return False
+3.given A=[2,1] the function shoudl return True
+
+
+
+
+
+def soluation(A):
+    count_even=0
+    for n in A:
+        if n %2==0:
+            count_even +=1
+    count_odd=len(A) - count_even
+    if count_odd !=count_even:
+
+        return False
+    return True
+
+
+print(soluation([2,7,4,6,3,1]))
+print(soluation([1,1]))
+print(soluation([2,1]))
+
+
+
+
+
+output:-
+
+True
+False
+True
+
 
 
 
