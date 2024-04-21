@@ -85,6 +85,7 @@ max_pair_sum = largest_pair_sum(array)
 print("Largest pair sum:", max_pair_sum)
 
 ------------------------------------------------------------>count the words<------------------------------------------------------------------------------------
+6
 phrase = "big black bug bit a big black dog on his on big black nose"
 words=phrase.split()
 print(words)
@@ -100,7 +101,8 @@ for word in words:
                 word_count[word]=1
 for val,count in word_count.items():
         print(val,count)
----------------------------------------------->output<--------------------------------------------------------------------
+output
+------
 big 3
 black 3
 bug 1
@@ -113,6 +115,7 @@ nose 1
 
 
 ----------------------------------------->problem<--------------------------------------------------------------------
+7
 you are given an array of N inetegers. you want to split them into N/2 pairs in such a way that the sum of integers in each pair is odd. N is even and every element of the array
 must be present in exactly one pair
 you task is to determine whether it is possible to split the numbers into such pairs.for example,given[2,7,4,6,3,1], The answer is True
@@ -122,8 +125,6 @@ example
 1.given A=[2,,7,4,6,3,1] the function should return True,
 2.given A=[1,1] the function should return False
 3.given A=[2,1] the function shoudl return True
-
-
 
 
 
@@ -156,7 +157,7 @@ True
 
 
 ----------------------------------------------------------------->is_subsequence<---------------------------------------------------------------------------
-
+8.
 def is_subsequence(s,t):
     i=j=0
     while i < len(s) and j < len(t):
@@ -178,4 +179,28 @@ print(is_subsequence(s1,s2))
 
 True
 False
+
+--------------------------------------> Target of two Sums<-----------------------------------------------------------------
+9.
+def targetSum(nums):
+    target = 10
+    m = {}
+    for i in range(len(nums)):
+        num = nums[i]
+        #print(num)
+        reaminder = target - num #----> 10-4=6
+        if (reaminder in m):
+            return ([m[reaminder],i])
+            #print(m[reaminder])
+        m[num]=i
+        #print("------",reaminder)
+
+
+
+
+num=[4,6,7,2,3]
+
+print(targetSum(num))
+o/p
+[0, 1]
 
