@@ -150,3 +150,11 @@ dict2 ={
 
 for k,v in dict2.items():
         print(v)
+---------------------------------minimum value of the in the given dict----------------------------------------------
+
+
+dict={"a":4,"b":3,"c":7}
+y=min(dict.values())
+print(y)
+o/p
+3
