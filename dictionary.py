@@ -158,3 +158,21 @@ y=min(dict.values())
 print(y)
 o/p
 3
+
+
+-------------------------------->GET THE VALUES FROM YOU THE PARTICAL RANGE OF KEY<--------------------------
+
+Input={"Gfg" : 6, "is" : 7,"best" : 9, "for" :8,"hours" :11}
+i, j = 9, 12
+
+print(Input)
+
+res=dict()
+for k,v in Input.items():
+    if v>=i and v<j:
+        res[k]=v
+
+print(res)
+o/p
+{'best': 9, 'hours': 11}
+
