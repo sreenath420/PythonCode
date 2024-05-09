@@ -221,3 +221,33 @@ for i in duplicate:
         dupl[i]=1
 
 print(dupl)
+
+
+--------------------------------------->weight of the give dicti<------------------------------------------
+dict={1:"apple", 2:"orange", 3:"peer"}
+
+
+def calculate_values(a):
+    weight = 0
+    for char in a:
+        weight +=ord(char)
+    return weight
+
+def assign_weighted(dict):
+    weighted_dict={}
+    for key,value in dict.items():
+        weight=calculate_values(value)
+        weighted_dict[value]=weight
+    return  weighted_dict
+
+print(assign_weighted(dict))
+
+
+output:-
+
+{'apple': 530, 'orange': 636, 'peer': 428}
+
+
+
+
+
