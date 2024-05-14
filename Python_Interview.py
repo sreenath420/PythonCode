@@ -246,8 +246,28 @@ print(assign_weighted(dict))
 output:-
 
 {'apple': 530, 'orange': 636, 'peer': 428}
+--------------------------------------------->sotred list based on string value<-------------------------------------------
+
+input:-str=["walk","swim","run","jump","dance"]
+output:- ['dance', 'jump', 'run', 'swim', 'walk']
 
 
+str=["walk","swim","run","jump","dance"]
+def buble_sorted(str):
+    n =len(str)
+    print(n)
+    for i in range(n):
+        #print(str[i])
+        for j in range(n-i-1):#-->4
+            if str[j]>str[j+1]:
+                str[j],str[j+1]=str[j+1],str[j]
+    return str
+print(buble_sorted(str))
+
+
+o/p:-
+
+['dance', 'jump', 'run', 'swim', 'walk']
 
 
 
