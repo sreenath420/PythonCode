@@ -247,4 +247,20 @@ o/p:-
 ['dance', 'jump', 'run', 'swim', 'walk']
 
 
+------------------------------------------------------Target of two sums----------------------------------------------------------------------------------
+Input-
+num=[4,6,7,2,3]
+Output-
+target=10
 
+def twoTarget(num,target):
+    m={}
+    for i in range(len(num)):
+        nums=num[i]
+        rem=target-nums
+        if rem in m:
+            #print(m)
+            return [m[rem],i]
+        m[nums]=i
+
+print(twoTarget(num,target))
