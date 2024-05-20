@@ -180,34 +180,11 @@ print(is_subsequence(s1,s2))
 True
 False
 
---------------------------------------> Target of two Sums<-----------------------------------------------------------------
-9.
-def targetSum(nums):
-    target = 10
-    m = {}
-    for i in range(len(nums)):
-        num = nums[i]
-        #print(num)
-        reaminder = target - num #----> 10-4=6
-        if (reaminder in m):
-            return ([m[reaminder],i])
-            #print(m[reaminder])
-        m[num]=i
-        #print("------",reaminder)
-
-
-
-
-num=[4,6,7,2,3]
-
-print(targetSum(num))
-o/p
-[0, 1]
 
 count the each number occurence in a give list
 
 -------------------------------------------------------------------------------------------------------------------------------------
-10.duplicate = [12,11,12,14,12,13,20,19,4,5,4,3,6,9]
+9.duplicate = [12,11,12,14,12,13,20,19,4,5,4,3,6,9]
 
 {12: 4, 11: 1, 14: 2, 13: 1, 20: 1, 4: 2, 5: 1, 3: 1, 9: 1}
 
