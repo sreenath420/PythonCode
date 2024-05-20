@@ -252,9 +252,13 @@ o/p:-
 10.
 Input-
 num=[4,6,7,2,3]
-Output-
 target=10
 
+Output-
+[0,1]
+
+num=[4,6,7,2,3]
+target =10
 def twoTarget(num,target):
     m={}
     for i in range(len(num)):
