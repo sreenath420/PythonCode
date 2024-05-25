@@ -23,7 +23,9 @@ n order to access the list items refer to the index number. Use the index operat
 
 
 Accessing elements from a multi-dimensional list
-----------------------------------------------------\
+----------------------------------------------------
+
+
 
 nested list having muliptle sublist kind inside the list we can access index value from given sublist value
 
@@ -422,3 +424,20 @@ my_list=[num for num in list if num!=""]
 print(my_list)
 
 ['Hello', 'Logical', 'Python']
+
+----------------------------------------------------------->Flatted given list<-----------------------------------------------------------
+
+input:-
+lst = [[1, 2, 3, 4, 5], [6, 7, 8, 9], 10, 11]
+output:-
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+code:-
+lst = [[1, 2, 3, 4, 5], [6, 7, 8, 9], 10, 11]
+flattened_list = []
+for item in lst:
+    if isinstance(item, list):
+            flattened_list.extend(item)  # Recursive call for nested lists
+    else:
+            flattened_list.append(item)  # Directly append non-list items
+
+print(flattened_list)
