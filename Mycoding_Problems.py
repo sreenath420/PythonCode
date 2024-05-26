@@ -31,3 +31,19 @@ def targetTwo(nums,target):
 nums=[4,6,9,2,3,4,5,12]
 target=10
 print(targetTwo(nums,target))
+
+
+---------------------------------------------------------->partition the list based on given number<------------------------------------------------------
+list = [1,2,99,8,77,66,54,67,80,45,32,27]
+partition_num=40
+def partition_fun(list,partition_num):
+    min_value=[]
+    max_value=[]
+    for i in list:
+        if i < partition_num:
+            min_value.append(i)
+        else:
+            max_value.append(i)
+    return min_value+max_value
+
+print(partition_fun(list,partition_num))
