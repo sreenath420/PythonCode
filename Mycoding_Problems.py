@@ -47,3 +47,17 @@ def partition_fun(list,partition_num):
     return min_value+max_value
 
 print(partition_fun(list,partition_num))
+
+--------------------------------------------------------------------->Remove_duplicates in given list<-------------------------------------------------------
+
+list=[1,2,3,3,4,5,5,5,6,6]
+output=[1, 2, 3, 4, 5, 6]
+def remove_duplicate(list):
+    remove_values=[]
+    for i in list:
+        if i not in remove_values:
+            remove_values.append(i)
+    return remove_values
+
+
+print(remove_duplicate(list))
