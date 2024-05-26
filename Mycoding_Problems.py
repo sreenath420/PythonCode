@@ -15,3 +15,19 @@ def missing(list):
     return missing_number
 
 print(missing(list))
+
+
+------------------------------------------------------>Sum of two Numbers <-------------------------------------------------------------
+def targetTwo(nums,target):
+    m={}
+    for i in range(len(nums)):
+        num=nums[i]
+        reaming=target -num
+        if reaming in m:
+            return [m[reaming],i]
+        m[num]=i
+
+
+nums=[4,6,9,2,3,4,5,12]
+target=10
+print(targetTwo(nums,target))
