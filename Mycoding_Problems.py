@@ -68,3 +68,40 @@ for i in range(6):
   for j in range(i):
     print(i,end='')
   print('')
+
+---------------------------------------------------->moving zeros<-------------------------------------------------------
+method:-1
+num=[6,7,0,9,0,3,3,4,5,0]
+output:-[6, 7, 9, 3, 3, 4, 5, 0, 0, 0]
+
+def moveZeros(num):
+    j =0
+    for i in range(len(num)):
+        if num[i]!=0:
+            num[j]=num[i]
+            j +=1
+    for k in range(j,len(num)):
+        num[k]=0
+    return num
+print(moveZeros(num))
+method:-2
+
+
+list1=[k for k in num if k!=0]
+list2=[k for k in num if k==0]
+print(list1+list2)
+
+method:-3
+its best soluation 
+num=[6,7,0,9,0,3,3,4,5,0]
+
+def moveZeros(num):
+    r=0
+    for i in range(len(num)):
+        if num[i]:
+            num[r],num[i]=num[i],num[r]
+            r +=1
+    return num
+
+print(moveZeros(num))
+
