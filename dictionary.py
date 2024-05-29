@@ -176,3 +176,14 @@ print(res)
 o/p
 {'best': 9, 'hours': 11}
 
+----------------------------------->GET THE VALUE FROM BELOW VALUE<-------------------------------------------------------------
+nested_dict = {'a': {'b': {'c': 42}}}
+keys = ['a', 'b', 'c']
+output:-42
+def get_nested_values(nested_dict,keys):
+    for i in keys:
+        nested_dict=nested_dict[i]
+        #print(nested_dict)
+    return nested_dict
+
+print(get_nested_values(nested_dict,keys))
