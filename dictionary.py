@@ -199,3 +199,20 @@ def merge_dict(dict1,dict2):
 
 output = merge_dict(dict1,dict2)
 print("Sum of similar keys in dictionary",output)
+
+
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+
+----------------------------------------------->reverse dict<---------------------------------------------------------------
+Reverse Key-Value Pairs
+Define a function which takes as a parameter dictionary and returns a dictionary in which everse the key-value pairs are reversed.
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+reverse_dict(my_dict)
+Output:{1: 'a', 2: 'b', 3: 'c'}
+
+def revers_dictionary(my_dict):
+    return {k:v for v,k in my_dict.items()}
+
+call_fun=revers_dictionary(my_dict)
+print(call_fun)
+{1: 'a', 2: 'b', 3: 'c'}
