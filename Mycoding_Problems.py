@@ -125,3 +125,18 @@ print(count_numbers(result))
 output:-
 
 {'big': 3, 'black': 3, 'bug': 1, 'bit': 1, 'a': 1, 'dog': 1, 'on': 2, 'his': 1, 'nose': 1}
+
+
+------------------------------------------>count the repeated letter<---------------------------------------------------
+result = "aabbccddeeffhg"
+
+def count_numbers(result):
+    count_num={}
+    for i in result:
+        if i in count_num:
+            count_num[i] +=1
+        else:
+            count_num[i]=1
+    return count_num
+print(count_numbers(result))
+{'a': 2, 'b': 2, 'c': 2, 'd': 2, 'e': 2, 'f': 2, 'h': 1, 'g': 1}
