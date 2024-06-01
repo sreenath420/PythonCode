@@ -38,10 +38,10 @@ python coding problems
 4444
 55555
    
-5.moving zeros end given list
+6.moving zeros end given list
 
-6.count the each word in given string.
+7.count the each word in given string.
 
-7.count the repeated letter
+8.count the repeated letter
 
-8.count the each number in given list
+9.count the each number in given list
