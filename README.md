@@ -43,3 +43,5 @@ python coding problems
 6.count the each word in given string.
 
 7.count the repeated letter
+
+8.count the each number in given list
