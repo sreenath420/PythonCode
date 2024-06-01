@@ -30,3 +30,9 @@ python coding problems
 3.Given a list and a value x, partition it such that all elements less than x come before elements greater than or equal to x.
 
 4.remove duplicates given list
+5. pattern matching
+1
+22
+333
+4444
+55555
