@@ -105,3 +105,23 @@ def moveZeros(num):
 
 print(moveZeros(num))
 
+--------------------------------------------->count the each word in given string<----------------------------------------------------
+
+pharse = "big black bug bit a big black dog on his on big black nose"
+
+result=pharse.split()
+#print(result)
+
+def count_numbers(result):
+    count_num={}
+    for i in result:
+        if i in count_num:
+            count_num[i] +=1
+        else:
+            count_num[i]=1
+    return count_num
+print(count_numbers(result))
+
+output:-
+
+{'big': 3, 'black': 3, 'bug': 1, 'bit': 1, 'a': 1, 'dog': 1, 'on': 2, 'his': 1, 'nose': 1}
