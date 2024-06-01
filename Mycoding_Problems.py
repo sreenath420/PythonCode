@@ -139,4 +139,22 @@ def count_numbers(result):
             count_num[i]=1
     return count_num
 print(count_numbers(result))
+output:-
 {'a': 2, 'b': 2, 'c': 2, 'd': 2, 'e': 2, 'f': 2, 'h': 1, 'g': 1}
+
+------------------------------------------>count the number each in the list<------------------------------------------------------
+
+num=[2,3,3,3,4,4,5,5,6,6,7,7]
+def count_number(num):
+    result={}
+    for i in num:
+        if i in result:
+            result[i] +=1
+        else:
+            result[i]=1
+    return result
+
+print(count_number(num))
+
+output:-
+{2: 1, 3: 3, 4: 2, 5: 2, 6: 2, 7: 2}
