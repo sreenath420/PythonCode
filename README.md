@@ -6,22 +6,7 @@ python coding problems
 
 2.Fib number
 
-
-
------------------------------------------------------>Python_Interview.py<-------------------------------------------------------------------------------
-
-1.Remove Duplicate in given list 
-
-2.given dictionary, it will return the dictionary with sort by value
-
-3.write python program to get repeted value which value repeat
-
-4.write python repeat the letter give string
-
-
-
-
-------------------------------------------------------->Mycoding_Problems<---------------------------------------------------------------------------------
+------------------------------------------------------->Mycoding_Problems.py<---------------------------------------------------------------------------------
 
 1.missing_numbers
 
