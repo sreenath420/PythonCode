@@ -158,3 +158,21 @@ print(count_number(num))
 
 output:-
 {2: 1, 3: 3, 4: 2, 5: 2, 6: 2, 7: 2}
+
+
+------------------------------------------------>is_subsequence<-----------------------------------------------------------------------------
+
+def is_subsequence(s,t):
+    i=j=0
+    while i < len(s) and j < len(t):
+        if s[i]==t[j]:
+            i +=1
+        j +=1
+    return i==len(s)
+
+s1 = "abc"
+s2 = "sagfhdbdsrgcadsf"
+print(is_subsequence(s1,s2))
+
+output:-
+True
