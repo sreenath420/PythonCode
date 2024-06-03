@@ -126,7 +126,7 @@ i/p-
 words = ["bilingual", "macroeconomics", "enlarge", "macroscopic", "monolingual"]
 prefix = "macro"
 o/p-
-3
+2
 
 words = ["bilingual", "macroeconomics", "enlarge", "macroscopic", "monolingual"]
 prefix = "macro"
