@@ -120,3 +120,20 @@ print(repeated)
 output:-
 ['l']
 1
+
+-----------------------------------------------------matching with prefix----------------------------------------
+i/p-
+words = ["bilingual", "macroeconomics", "enlarge", "macroscopic", "monolingual"]
+prefix = "macro"
+o/p-
+3
+
+words = ["bilingual", "macroeconomics", "enlarge", "macroscopic", "monolingual"]
+prefix = "macro"
+count=0
+for i in range(len(words)):
+    
+    prefix_words=words[i][:len(prefix)]
+    if prefix_words==prefix:
+        count+=1
+print(count)
