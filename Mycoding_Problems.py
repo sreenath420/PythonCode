@@ -176,3 +176,19 @@ print(is_subsequence(s1,s2))
 
 output:-
 True
+
+--------------------------------------------------->count_word_prefix<----------------------------------------------------------------------
+words=["bilingual", "macroeconomics", "enlarge", "macroscopic", "monolingual"]
+prefix="macro"
+
+def word_prefix(words,prefix):
+    counter = 0
+    for i in range(len(words)):
+        word_prefix=words[i][:len(words)]
+        if word_prefix==prefix:
+            counter +=1
+    return counter
+print(word_prefix(words,prefix))
+
+ouput:-
+2
