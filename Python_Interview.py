@@ -224,7 +224,7 @@ output:-
 
 {'apple': 530, 'orange': 636, 'peer': 428}
 --------------------------------------------->sotred list based on string value<-------------------------------------------
-9.
+9. Bubble sort
 input:-str=["walk","swim","run","jump","dance"]
 output:- ['dance', 'jump', 'run', 'swim', 'walk']
 
