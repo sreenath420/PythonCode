@@ -30,3 +30,5 @@ python coding problems
 8.count the repeated letter
 
 9.count the each number in given list
+
+10.Word prefix given string
