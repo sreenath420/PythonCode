@@ -270,3 +270,17 @@ def twoTarget(num,target):
         m[nums]=i
 
 print(twoTarget(num,target))
+
+----------------------------------------------------------count of substring----------------------------------------------------------------------
+input-
+a="ababababa"  
+b="aba"
+output-
+4
+a="ababababa"  
+b="aba"
+c=0
+for i in range(0,len(a)):
+    if a[i:i+len(b)]==b:
+       c+=1
+print(c)
