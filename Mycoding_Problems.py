@@ -192,3 +192,16 @@ print(word_prefix(words,prefix))
 
 ouput:-
 2
+
+--------------------------------------------------------->
+
+
+words = ['apple', 'orange', 'banana', 'apple', 'orange', 'apple'] 
+count_word_frequency(words) 
+Output: {'apple': 3, 'orange': 2, 'banana': 1}
+
+def count_word_frequency(words):
+    word_count = {}
+    for word in words:
+        word_count[word] = word_count.get(word, 0) + 1
+    return word_count
