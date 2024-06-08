@@ -205,3 +205,16 @@ def count_word_frequency(words):
     for word in words:
         word_count[word] = word_count.get(word, 0) + 1
     return word_count
+------------------------------------------------------->merge two dictionaries in python<------------------------------------------------------------
+
+dict1 = {'a': 1, 'b': 2, 'c': 3}
+dict2 = {'b': 3, 'c': 4, 'd': 5}
+
+for k,v in dict2.items():
+    dict1[k]=dict1.get(k,0)+v
+print(dict1)
+
+
+output:-
+{'a': 1, 'b': 5, 'c': 7, 'd': 5}
+
