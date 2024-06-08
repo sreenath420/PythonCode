@@ -34,3 +34,5 @@ python coding problems
 10.Word prefix given string
 
 11.Count Word Frequency
+
+12.merge two dictionaries in python
