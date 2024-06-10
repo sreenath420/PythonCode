@@ -284,3 +284,23 @@ for i in range(0,len(a)):
     if a[i:i+len(b)]==b:
        c+=1
 print(c)
+
+----------------------------------------------------Anagram-----------------------------------------------------------------------------------------
+Input: strs = ["eat","tea","tan","ate","nat","bat"]
+Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+
+strs=["eat","tea","tan","ate","nat","bat"]
+def anagram_list(strs):
+    anagram_values={}
+    for word in strs:
+        key = ''.join(sorted(word))
+        print(key)
+        if key not in anagram_values:
+            anagram_values[key]=[word]
+            print("not append vale",anagram_values)
+        else:
+            anagram_values[key].append(word)
+            print("append values",anagram_values)
+    return list(anagram_values.values())
+
+print(anagram_list(strs))
