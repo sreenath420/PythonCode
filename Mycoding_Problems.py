@@ -270,3 +270,20 @@ class Solution:
             result +=word2[j]
             j +=1
         return result
+
+----------------------------------------------->substring_<---------------------------------------------------
+
+
+str = "abracabrdabaacdefabr"
+substr = "abr"
+lst = []
+for i in range(0,len(str)):
+    if str[i:i+len(substr)] == substr:
+        lst.append(i)
+print(lst)
+o/p
+[0, 5, 17]
+
+
+
+
