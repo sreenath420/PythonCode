@@ -18,7 +18,7 @@ python coding problems
 
 4.remove duplicates given list
 
-5. pattern matching
+5.pattern matching
 1
 22
 333
