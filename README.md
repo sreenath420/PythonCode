@@ -38,3 +38,5 @@ python coding problems
 11.Count Word Frequency
 
 12.merge two dictionaries in python
+
+13.Prime_Number
