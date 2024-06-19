@@ -6,6 +6,5 @@ for i in range(len(words)):
     if prefix_count==prefix:
         counter +=1
 print("print the prefixing word:",counter)
-
 #output:-
 print the prefix word: 2
