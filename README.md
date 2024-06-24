@@ -45,4 +45,44 @@ python coding problems
 
 -------------------------------------------->Python_Interview.py<--------------------------------------------------
 
-1.
+1.Remove Duplicate values in given list
+
+2.Write a python function dict_sort_by_value(dict) so that for given dictionary, it will return the dictionary with sort by value.
+example 
+
+3.write python program to get repeted value which value repeatec 3 times here
+
+4.write python repeat the letter give string
+
+5.Find the largest pair sum in an array in python by using for loop
+
+6.count the words.
+
+7
+you are given an array of N inetegers. you want to split them into N/2 pairs in such a way that the sum of integers in each pair is odd. N is even and every element of the array
+must be present in exactly one pair
+you task is to determine whether it is possible to split the numbers into such pairs.for example,given[2,7,4,6,3,1], The answer is True
+one of the possible sets of pairs is (2,7),(6,3) and (4,1) Theirs sums are respectively 9,9 and 5 all of which are odd.
+
+example
+1.given A=[2,,7,4,6,3,1] the function should return True,
+2.given A=[1,1] the function should return False
+3.given A=[2,1] the function shoudl return True
+
+8.is_subsequence
+
+9.weight of the give dictionary
+
+10.sotred list based on string value
+
+11.Target of two sums
+
+12.Target of two sums
+
+13.count of substring
+
+14.Anagram
+
+15.flattend_list
+
+
