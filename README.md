@@ -41,3 +41,8 @@ python coding problems
 12.merge two dictionaries in python
 
 13.Prime_Number
+
+
+-------------------------------------------->Python_Interview.py<--------------------------------------------------
+
+1.
