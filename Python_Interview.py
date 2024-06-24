@@ -304,3 +304,25 @@ def anagram_list(strs):
     return list(anagram_values.values())
 
 print(anagram_list(strs))
+
+--------------------------------------------------------flattend_list-------------------------------------------------------------------------------------
+lst = [[1,2,3,4,5],[6,7,8,9],'a','b',[10,11]]
+output=[1,2,3,4,5,6,7,8,9,'a','b',10,11]
+result=[]
+for i in lst:
+  if isinstance(i,list):
+    result.extend(i)
+  else:
+    result.append(i)  
+print(result)
+
+def flattend_list(result):
+  result=[]
+  for i in lst:
+    if isinstance(i,list):
+      result.extend(i)
+    else :
+      result.append(i)
+  return result
+lst = [[1,2,3,4,5],[6,7,8,9],'a','b',[10,11]]
+print(flattend_list(lst)) 
