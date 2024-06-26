@@ -331,3 +331,25 @@ def flattend_list(result):
   return result
 lst = [[1,2,3,4,5],[6,7,8,9],'a','b',[10,11]]
 print(flattend_list(lst)) 
+
+--------------------------------------------------------count_consecutive_characters-------------------------------------------------------------------------------------
+inpput-
+ujjwala
+output-
+u1j2w1a1l1a1
+def count_consecutive_characters(input_string):
+    result=''
+    count=1
+    pre_char=input_string[0]
+    for char in input_string[1:]:
+        if char==pre_char:
+            count +=1
+        else:
+            result +=f"{pre_char}{count}"
+            count =1
+            pre_char=char
+    result +=f"{pre_char}{count}"
+    return result
+input_string='ujjwala'
+print(count_consecutive_characters(input_string))
+
