@@ -85,4 +85,6 @@ example
 
 15.flattend_list
 
+16.count consecutive characters
+
 
