@@ -353,3 +353,28 @@ def count_consecutive_characters(input_string):
 input_string='ujjwala'
 print(count_consecutive_characters(input_string))
 
+
+--------------------------------------------------------Print only values not any keys-------------------------------------------------------------------------------------
+
+nested_dict = {'a': {'b': {'c': 42}}}
+keys = ['a', 'b', 'c']
+output:- 42
+Method 1--------------------------------------------------------
+nested_dict = {'a': {'b': {'c': 42}}}
+keys = ['a', 'b', 'c']
+
+def nested_func(nested_dict,keys):
+    for i in keys:
+        nested_dict=nested_dict[i]
+    return  nested_dict
+print(nested_func(nested_dict,keys))
+
+Method 2---------------------------------------------------------
+nested_dict = {'a': {'b': {'c': 42}}}
+
+for k,v in nested_dict.items():
+    #print(v)
+    for i,j in v.items():
+        #print(j)
+        for k,x in j.items():
+            print(x)
