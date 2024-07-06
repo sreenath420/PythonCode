@@ -322,3 +322,19 @@ print(flattenStrings(lst))
 
 output:-
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 10, 11]
+
+
+-----------------------------------> Nested_Keys<---------------------------------------------------------
+
+nested_dict = {'a': {'b': {'c': 42}}}
+keys = ['a', 'b', 'c','d']
+#output:-42
+
+def nested_dict1(nested_dict,keys):
+        for i in keys:
+            if isinstance(nested_dict, dict) and i in nested_dict:
+                nested_dict=nested_dict[i]
+        #print(nested_dict)
+        return nested_dict
+
+print(nested_dict1(nested_dict,keys))
