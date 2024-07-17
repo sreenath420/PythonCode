@@ -379,7 +379,7 @@ for k,v in nested_dict.items():
         for k,x in j.items():
             print(x)
 
--------------------------------------->print common values between list<----------------------------------------------
+-------------------------------------->print common values between two lists<----------------------------------------------
 list1 = [1, 2, 3, 4]
 list2 = [3, 4, 5, 6]
 out=[3,4]
