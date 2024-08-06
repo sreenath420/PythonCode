@@ -34,6 +34,18 @@ for num in li:
 comm_values=[num for num,count in count_dict.items() if count==3]
 print('comm_value',comm_values)
 
+method:-2
+
+def count_dict(li,repetition_count=3):
+    dict_cnt={}
+    for i in li:
+        if i  not in dict_cnt:
+            dict_cnt[i]=1
+        else:
+            dict_cnt[i] +=1
+    nn=[num for num,count in dict_cnt.items() if count==repetition_count]
+    return nn
+print(count_dict(li))
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 4.write python repeat the letter give string
 word="fdcaagahaajqaa"
