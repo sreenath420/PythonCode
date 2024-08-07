@@ -398,3 +398,32 @@ out=[3,4]
 
 result=[x for x in list1 if x in list2]
 print(result)
+
+
+----------------------------------->count the each letter in given string<----------------------------------
+
+def count_vowels(name,vowels):
+    # Initialize an empty dictionary to store individual character counts
+    dict_individual = {}
+
+    # Count each character in the string
+    for i in name.lower():
+        if i in dict_individual:
+            dict_individual[i] += 1
+        else:
+            dict_individual[i] = 1
+
+    # Define the vowels
+    #vowels = 'AEIOUaeiou'
+
+    # Print the counts of only the vowels
+
+    for key, value in dict_individual.items():
+        if key in vowels:
+            print(key, value)
+
+# Example usage
+name = 'SrEenath'
+vowels = 'AEIOUaeiou'
+count_vowels(name,vowels)
+
