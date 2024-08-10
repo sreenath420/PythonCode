@@ -401,7 +401,12 @@ print(result)
 
 
 ----------------------------------->count the each letter in given string<----------------------------------
-
+count the vowels in given string
+input
+name = 'SrEenath'
+output
+e 2
+a 1
 def count_vowels(name,vowels):
     # Initialize an empty dictionary to store individual character counts
     dict_individual = {}
@@ -427,3 +432,23 @@ name = 'SrEenath'
 vowels = 'AEIOUaeiou'
 count_vowels(name,vowels)
 
+
+------------------------------------->Flattend_List<--------------------------------------------------------
+input:-
+lis=[1,2,3,[4,5],6,[7,8,[9,2]],10]
+output:-
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 2, 10]
+
+lis=[1,2,3,[4,5],6,[7,8,[9,2]],10]
+
+def flattend(lis):
+    flatted_list=[]
+    for num in lis:
+        if isinstance(num,list):
+            flatted_list.extend(flattend(num))
+        else:
+            flatted_list.append(num)
+    return flatted_list
+
+
+print(flattend(lis))
