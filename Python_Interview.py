@@ -481,3 +481,22 @@ output:-
 
 count the number of 1 words in each 3
 count the number of 2 words in each 2
+
+------------------------------------------->22.covert dictionary to json in python<-----------------------------------------------
+import json
+
+# Sample dictionary
+data = {
+    "name": "Alice",
+    "age": 30,
+    "city": "New York"
+}
+
+# Convert dictionary to JSON string
+json_string = json.dumps(data)
+
+# Print the JSON string
+print(json_string)
+output:-
+
+{"name": "Alice", "age": 30, "city": "New York"}
