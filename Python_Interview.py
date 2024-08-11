@@ -455,7 +455,7 @@ print(flattend(lis))
 
 
 ------------------------------------------------>List Comprehension <------------------------------------------------------------
-
+make a list , based on list a where 1 is for odd, 0 is for even
 num=[22,57,34,96,59,65,98]
 
 output
