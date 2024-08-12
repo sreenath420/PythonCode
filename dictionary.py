@@ -188,6 +188,22 @@ def get_nested_values(nested_dict,keys):
 
 print(get_nested_values(nested_dict,keys))
 
+method2: nested_keys
+
+nested_dict = {'a': {'b': {'c': 42}}}
+keys = ['a', 'b', 'c','d']
+
+def nest_keys(d,keys):
+    for key in keys:
+        if isinstance(d,dict):
+            d=d[key]
+        else:
+            None
+
+    return d
+
+print(nest_keys(nested_dict,keys))
+
 Define a function with takes two dictionaries and merge them and sum the values of common keys.
 dict1 = {'a': 1, 'b': 2, 'c': 3}
 dict2 = {'b': 3, 'c': 4, 'd': 5}
