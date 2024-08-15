@@ -112,3 +112,9 @@ print(fib)
 output:-
 
 [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+
+
+------------------------------------->Generator vs Normal Functions<-------------------------------
+
+
+Generator is special function in python it gives sequence of items. 
