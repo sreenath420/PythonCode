@@ -91,5 +91,17 @@ example
 
 16.count consecutive characters
 
+17.print common values between two lists
+
+18.count the each letter in given string
+
+19.Flattend_List
+
+20.List Comprehension
+
+21.count the number of words each line
+
+22.covert dictionary to json in python<
+
 ------------------------------------------------------------------complex coding-----------------------------------------------------------
 1.reverse_vowel.py -> Reverse vowel  (input:Apple -> output:epplA)
