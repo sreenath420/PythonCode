@@ -344,7 +344,7 @@ def flattend_list(result):
 lst = [[1,2,3,4,5],[6,7,8,9],'a','b',[10,11]]
 print(flattend_list(lst)) 
 
---------------------------------------------------------15.count_consecutive_characters-------------------------------------------------------------------------------------
+--------------------------------------------------------16.count_consecutive_characters-------------------------------------------------------------------------------------
 inpput-
 ujjwala
 output-
@@ -366,7 +366,7 @@ input_string='ujjwala'
 print(count_consecutive_characters(input_string))
 
 
---------------------------------------------------------16.Print only values not any keys-------------------------------------------------------------------------------------
+--------------------------------------------------------17.Print only values not any keys-------------------------------------------------------------------------------------
 
 nested_dict = {'a': {'b': {'c': 42}}}
 keys = ['a', 'b', 'c']
@@ -391,7 +391,7 @@ for k,v in nested_dict.items():
         for k,x in j.items():
             print(x)
 
--------------------------------------->17.print common values between two lists<----------------------------------------------
+-------------------------------------->18.print common values between two lists<----------------------------------------------
 list1 = [1, 2, 3, 4]
 list2 = [3, 4, 5, 6]
 out=[3,4]
@@ -400,7 +400,7 @@ result=[x for x in list1 if x in list2]
 print(result)
 
 
------------------------------------>18.count the each letter in given string<----------------------------------
+----------------------------------->19.count the each letter in given string<----------------------------------
 count the vowels in given string
 input
 name = 'SrEenath'
@@ -433,7 +433,7 @@ vowels = 'AEIOUaeiou'
 count_vowels(name,vowels)
 
 
-------------------------------------->19.Flattend_List<--------------------------------------------------------
+------------------------------------->20.Flattend_List<--------------------------------------------------------
 input:-
 lis=[1,2,3,[4,5],6,[7,8,[9,2]],10]
 output:-
@@ -454,7 +454,7 @@ def flattend(lis):
 print(flattend(lis))
 
 
------------------------------------------------->20.List Comprehension <------------------------------------------------------------
+------------------------------------------------>21.List Comprehension <------------------------------------------------------------
 make a list , based on list a where 1 is for odd, 0 is for even
 num=[22,57,34,96,59,65,98]
 
@@ -465,7 +465,7 @@ n1=[0 if i %2==0 else 1 for i in num]
 
 print(n1)
 
---------------------------------------------->21.count the number of words each line<----------------------------------------------------
+--------------------------------------------->22.count the number of words each line<----------------------------------------------------
 
 lines = [
     "ABC,DEF,GHI",
@@ -482,7 +482,7 @@ output:-
 count the number of 1 words in each 3
 count the number of 2 words in each 2
 
-------------------------------------------->22.covert dictionary to json in python<-----------------------------------------------
+------------------------------------------->23.covert dictionary to json in python<-----------------------------------------------
 import json
 
 # Sample dictionary
