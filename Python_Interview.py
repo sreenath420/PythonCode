@@ -500,3 +500,22 @@ print(json_string)
 output:-
 
 {"name": "Alice", "age": 30, "city": "New York"}
+
+---------------------------------------->24.Anagram is true or not<------------------------------------------------------
+
+def anagram(str1, str2):
+    # Remove spaces, punctuation, and convert to lowercase
+    str1 = ''.join(e for e in str1 if e.isalnum()).lower()
+    str2 = ''.join(e for e in str2 if e.isalnum()).lower()
+    #print(str2)
+
+    # Check if sorted characters of both strings are equal
+    return sorted(str1) == sorted(str2)
+
+
+# Now, test the function with your example
+result = anagram("The Morse Code", "Here come dots@!")
+print(result)  # This will output: True
+
+output:-
+True
