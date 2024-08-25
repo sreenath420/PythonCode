@@ -354,3 +354,20 @@ def primeNumber(givnum):
     return strout
 
 print(primeNumber(given_number))
+
+-------------------------------------->20.𝗪𝗿𝗶𝘁𝗲 𝗮 𝗣𝘆𝘁𝗵𝗼𝗻 𝗽𝗿𝗼𝗴𝗿𝗮𝗺 𝘁𝗼 𝗴𝗲𝘁 𝘁𝗵𝗲 𝗹𝗲𝗻𝗴𝘁𝗵 𝗼𝗳 𝘁𝗵𝗲 𝗶𝗻𝗽𝘂𝘁 𝘀𝘁𝗿𝗶𝗻𝗴𝘀 𝗮𝗻𝗱 𝗰𝗼𝘂𝗻𝘁 𝗲𝗮𝗰𝗵 𝗰𝗵𝗮𝗿𝗮𝗰𝘁𝗲𝗿 𝗼𝗰𝗰𝘂𝗿𝗿𝗲𝗻𝗰𝗲 𝗲𝘅𝗰𝗹𝘂𝗱𝗶𝗻𝗴 𝘀𝗽𝗮𝗰𝗲𝘀<------------------------------------------
+text = "apple banana apple orange banana apple orange apple"
+words=text.replace(" ","")
+
+print(words)
+
+words_count={}
+for word in words:
+    #print(len(words))
+    if word in words_count:
+        words_count[word] +=1
+    else:
+        words_count[word]=1
+print((len(words),words_count))
+
+----------------------------------->21.
