@@ -370,4 +370,25 @@ for word in words:
         words_count[word]=1
 print((len(words),words_count))
 
------------------------------------>21.
+----------------------------------->21.weighted_list<---------------------------------------------------------------------
+
+dict1={1:"apple", 2:"orange", 3:"peer"}
+li=["apple","orange","peer"]
+
+def countS(s):
+    count=0
+    for i in s:
+        count +=ord(i)
+    return count
+
+def dict_weight(dict1):
+    weight_list={}
+    for i,v in dict1.items():
+        cnt_count=countS(v)
+        weight_list[v]=cnt_count
+    return weight_list
+
+print(dict_weight(dict1))
+
+output
+{'apple': 530, 'orange': 636, 'peer': 428}
