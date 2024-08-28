@@ -393,8 +393,8 @@ print(dict_weight(dict1))
 output
 {'apple': 530, 'orange': 636, 'peer': 428}
 
--------------------------------------------->22.Group Anagrams<--------------------------------------------------------------------
-
+-------------------------------------------->22.Anagrams Problems<--------------------------------------------------------------------
+                                 --->a.Group_anagram<---
 what is anagram
 An anagram is a word, phrase, or name formed by rearranging the letters of another word, 
 phrase, or name, typically using all the original letters exactly once. For example, 
@@ -413,5 +413,24 @@ def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
             else:
                 anagram_list[key].append(word)
         return list(anagram_list.values())
+
+                        ---->b.Valid Anagram<----
+
+Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+
+An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+
+ Example 1:
+
+Input: s = "anagram", t = "nagaram"
+Output: true
+Example 2:
+
+Input: s = "rat", t = "car"
+Output: false
+
+ def isAnagram(self, s: str, t: str) -> bool:
+        return sorted(s)==sorted(t)
+
 
 
