@@ -392,3 +392,26 @@ print(dict_weight(dict1))
 
 output
 {'apple': 530, 'orange': 636, 'peer': 428}
+
+-------------------------------------------->22.Group Anagrams<--------------------------------------------------------------------
+
+what is anagram
+An anagram is a word, phrase, or name formed by rearranging the letters of another word, 
+phrase, or name, typically using all the original letters exactly once. For example, 
+the word "listen" can be rearranged to form the word "silent." Anagrams are often used in word games and puzzles.
+
+Input: strs = ["eat","tea","tan","ate","nat","bat"]
+Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+
+
+def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        anagram_list={}
+        for word in strs:
+            key=''.join(sorted(word))
+            if key not in anagram_list:
+                anagram_list[key]=[word]
+            else:
+                anagram_list[key].append(word)
+        return list(anagram_list.values())
+
+
