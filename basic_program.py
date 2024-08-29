@@ -120,4 +120,14 @@ try:
 except ValueError:
     print("Enter the valid number")
 
+-------------------------------->Write a function to determine if two strings are anagrams<---------------------------------------------------
+
+def anagram(s1,s2):
+    return sorted(s1)==sorted(s2)
+
+
+print(anagram("listen","silent"))
+output:-
+True
+
 
