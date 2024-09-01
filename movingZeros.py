@@ -30,3 +30,25 @@ def moveZeros(Num):
             r += 1
     return Num
 print(moveZeros(Num))
+
+#Method:-4
+
+input_list = [0, 5, 9, 0, 20, 12, 0]
+
+def moveZeros(input_list):
+    move_zero=[]
+    zero_count=0
+    for i in input_list:
+        if i !=0:
+            move_zero.append(i)
+        else:
+            zero_count +=1
+
+    for j in range(zero_count):
+        move_zero.append(0)
+
+    return move_zero
+
+print(moveZeros(input_list))
+output
+[5, 9, 20, 12, 0, 0, 0]
