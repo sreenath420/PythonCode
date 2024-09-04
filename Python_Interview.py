@@ -519,3 +519,35 @@ print(result)  # This will output: True
 
 output:-
 True
+
+
+----------------->25.
+You are given an array of N integers. You want to split them into N/2 pairs in such a way that the sum of integers in each pair is odd. N is even and every element of the array must be present in exactly one pair. Your task is to determine whether it is possible to split the numbers into such pairs. For example, given (2, 7, 4, 6, 3, 1], the answer is True. One of the possible sets of pairs is (2, 7), (6, 3) and (4, 1). Their sums are respectively 9, 9 and 5, all of which are odd.
+ Write a function:
+def solution(A)
+which, given an array of integers A of length N, returns True when it is possible to create the required pairs and False otherwise.
+ Examples:
+1. Given A = [2, 7, 4,6, 3, 1], the function should return True, as explained above,.
+2. Given A = [-1, 1], the function should return False. The only possible pair has the sum -1 + 1 = 0 which is even. 3. Given A = [2, -1], the function should return True. The only pair has sum -1 + 2 = 1, which is odd, 4. Given A = [1, 2, 4, 3], the function should return True. Possible pairs are (1, 2), (4, 3). They both have an odd sum 5. Given A = [-1, 3, 4, 7, 7, 7), the function should return False We can create only one pair with an odd sum by taking 4 and any of the other numbers: for example, 4 + 7 = 11 Al the other pairs have an even sum
+ Write an efficient algorithm for the following assumptions <-----------------
+
+input_list = [2,5,6,0,1]
+
+
+def solution(A):
+    # Count odd and even numbers
+    odd_count = 0
+    even_count = 0
+
+    for num in A:
+        if num % 2 == 0:
+            even_count += 1
+        else:
+            odd_count += 1
+
+    # Check if the number of odd and even numbaers is equal
+    return odd_count == even_count
+
+print(solution(input_list))
+
+
