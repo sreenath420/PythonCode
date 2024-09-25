@@ -547,7 +547,33 @@ def solution(A):
 
     # Check if the number of odd and even numbaers is equal
     return odd_count == even_count
-
 print(solution(input_list))
+
+-------------------------->create a function find the index of a number in a list in Python using sorting, here's how you can do it <------------------
+
+def find_index_in_sorted_list(numbers, target_number):
+    # Sort the list without modifying the original list
+    sorted_numbers = sorted(numbers)
+
+    # Find the index of the target number in the sorted list
+    if target_number in sorted_numbers:
+        index_in_sorted = sorted_numbers.index(target_number)
+        return index_in_sorted
+    else:
+        return -1  # If the target number is not found in the list
+
+
+# Example usage:
+numbers = [50, 30, 10, 40, 20]
+target_number = 30
+
+index = find_index_in_sorted_list(numbers, target_number)
+print(f"Index of {target_number} in the sorted list: {index}")
+
+
+output:-
+
+Index of 30 in the sorted list: 2
+
 
 
