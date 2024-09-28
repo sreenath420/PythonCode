@@ -576,4 +576,29 @@ output:-
 Index of 30 in the sorted list: 2
 
 
+------------------------------------------------------>find the max word occurence in given string<------------------------------------------------------
 
+
+name='i am sreenath i am doing good i am going to travel I'
+#name=name.lower().split(' ')
+name_split=name.lower().split(' ')
+print(name_split)
+names_words={}
+for i in name_split:
+    if i in names_words:
+        names_words[i] +=1
+    else:
+        names_words[i]=1
+print(names_words)
+
+
+max_word = ''
+max_count = 0
+
+for word, count in names_words.items():
+    if count > max_count:
+        max_count = count
+        max_word = word
+print(max_word,max_count)
+ouptut
+i 4
