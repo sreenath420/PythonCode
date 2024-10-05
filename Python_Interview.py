@@ -549,7 +549,7 @@ def solution(A):
     return odd_count == even_count
 print(solution(input_list))
 
--------------------------->create a function find the index of a number in a list in Python using sorting, here's how you can do it <------------------
+-------------------------->26.create a function find the index of a number in a list in Python using sorting, here's how you can do it <------------------
 
 def find_index_in_sorted_list(numbers, target_number):
     # Sort the list without modifying the original list
@@ -576,7 +576,7 @@ output:-
 Index of 30 in the sorted list: 2
 
 
------------------------------------------------------->find the max word occurence in given string<------------------------------------------------------
+------------------------------------------------------>27.find the max word occurence in given string<------------------------------------------------------
 
 
 name='i am sreenath i am doing good i am going to travel I'
@@ -602,3 +602,34 @@ for word, count in names_words.items():
 print(max_word,max_count)
 ouptut
 i 4
+
+----->28.Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct<---------
+ 
+Example 1:
+Input: nums = [1,2,3,1]
+Output: true
+Explanation:
+The element 1 occurs at the indices 0 and 3.
+Example 2:
+Input: nums = [1,2,3,4]
+Output: false
+Explanation:
+All elements are distinct.
+Example 3:
+Input: nums = [1,1,1,3,3,4,3,2,4,2]
+Output: true
+
+def containsDuplicates(nums):
+    seen=set()
+    for num in nums:
+        if num in seen:
+            return True
+        seen.add(num)
+    return False
+    
+nums=[1,2,3]
+
+print(containsDuplicates(nums))
+output
+    False
+
