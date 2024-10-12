@@ -1,4 +1,4 @@
----------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------->1<-------------------------------------------------------------------------
 1.Remove Duplicate values in given list 
 
 list=[1,2,4,4,5,6,6,7,7]
@@ -10,14 +10,14 @@ for i in list:
    if i not in result:
       result.append(i)
 return result
------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------->2<------------------------------------------------------------------------------
 2.Write a python function dict_sort_by_value(dict) so that for given dictionary, it will return the dictionary with sort by value.
 example 
 input: dict = {1001:'A', 1002:'B', 1003:'A', 1004:'C',  1005:'B',   1006:'C'}
 output: {1001:'A', 1003:'A', 1002:'B', 1005:'B', 1004:'C', 1006:'C'}
 
 sorted_footballers_by_goals = sorted(footballers_goals.items(),key= lambda x:x[1])
---------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------->3<-------------------------------------------------------------------------------
 3.write python program to get repeted value which value repeatec 3 times here
 output:-
 comm_value [2, 6]
@@ -46,7 +46,7 @@ def count_dict(li,repetition_count=3):
     nn=[num for num,count in dict_cnt.items() if count==repetition_count]
     return nn
 print(count_dict(li))
------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------->4<--------------------------------------------------------------------
 4.write python repeat the letter give string
 word="fdcaagahaajqaa"
 counter={}
@@ -58,7 +58,16 @@ print(counter)
 o/p
 {'f': 1, 'd': 1, 'c': 1, 'a': 7, 'g': 1, 'h': 1, 'j': 1, 'q': 1}
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2nd way 
+
+word="fdcaagahaajqaa"
+counter={}
+for letter in word:
+    counter[letter]=counter.get(letter,0)+1
+print(counter)
+
+------------------------------------------------------------------------->5<---------------------------------------------------------------------------------
 5.Find the largest pair sum in an array in python by using for loop
 Method:-1
 def largest_pair_sum(arr):
@@ -96,7 +105,7 @@ array = [3, 6, 2, 8, 10, 5,15]
 max_pair_sum = largest_pair_sum(array)
 print("Largest pair sum:", max_pair_sum)
 
------------------------------------------------------------->count the words<------------------------------------------------------------------------------------
+------------------------------------------------------------>6.count the words<------------------------------------------------------------------------------------
 6
 phrase = "big black bug bit a big black dog on his on big black nose"
 words=phrase.split()
@@ -113,6 +122,19 @@ for word in words:
                 word_count[word]=1
 for val,count in word_count.items():
         print(val,count)
+
+-------->2nd way of code<----
+
+
+words=phrase.split()
+print(words)
+
+word_count={}
+
+for counts in words:
+    word_count[counts]=word_count.get(counts,0)+1
+print(word_count)
+
 output
 ------
 big 3
@@ -126,7 +148,7 @@ his 1
 nose 1
 
 
------------------------------------------>problem<--------------------------------------------------------------------
+----------------------------------------->7.problem<--------------------------------------------------------------------
 7
 you are given an array of N inetegers. you want to split them into N/2 pairs in such a way that the sum of integers in each pair is odd. N is even and every element of the array
 must be present in exactly one pair
@@ -168,7 +190,7 @@ True
 
 
 
------------------------------------------------------------------>is_subsequence<---------------------------------------------------------------------------
+----------------------------------------------------------------->8.is_subsequence<---------------------------------------------------------------------------
 8.
 def is_subsequence(s,t):
     i=j=0
@@ -195,7 +217,7 @@ False
 
 count the each number occurence in a give list
 
--------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------->9<-----------------------------------------------------------------------
 9.duplicate = [12,11,12,14,12,13,20,19,4,5,4,3,6,9]
 
 {12: 4, 11: 1, 14: 2, 13: 1, 20: 1, 4: 2, 5: 1, 3: 1, 9: 1}
@@ -212,7 +234,7 @@ for i in duplicate:
 print(dupl)
 
 
---------------------------------------->weight of the give dicti<------------------------------------------
+--------------------------------------->10.weight of the give dicti<------------------------------------------
 10.
 dict={1:"apple", 2:"orange", 3:"peer"}
 
@@ -236,7 +258,7 @@ print(assign_weighted(dict))
 output:-
 
 {'apple': 530, 'orange': 636, 'peer': 428}
---------------------------------------------->sotred list based on string value<-------------------------------------------
+--------------------------------------------->11.sotred list based on string value<-------------------------------------------
 11.
 Bubble sort
 input:-str=["walk","swim","run","jump","dance"]
@@ -261,7 +283,7 @@ o/p:-
 ['dance', 'jump', 'run', 'swim', 'walk']
 
 
-------------------------------------------------------Target of two sums----------------------------------------------------------------------------------
+------------------------------------------------------12.Target of two sums----------------------------------------------------------------------------------
 
 12.
 Input-
@@ -285,7 +307,7 @@ def twoTarget(num,target):
 
 print(twoTarget(num,target))
 
-----------------------------------------------------------count of substring----------------------------------------------------------------------
+----------------------------------------------------------13.count of substring----------------------------------------------------------------------
 13.
 input-
 a="ababababa"  
@@ -633,3 +655,26 @@ print(containsDuplicates(nums))
 output
     False
 
+---------------------------------------------------------->29<--------------------------------------------------------------
+input = ["john", "johnny", "juli", "john", "juli", "john"]
+output = ["john_1", "johnny_1", "juli_1", "john_2", "juli_2", "john_3"]
+
+
+def assign_counts(input_list):
+    counts = {}
+    output = []
+
+    for name in input_list:
+        #print(name)
+        counts[name] = counts.get(name, 0) + 1
+
+        output.append(f"{name}_{counts[name]}")
+    return output
+
+
+print(assign_counts(input))
+
+output :-
+   ['john_1', 'johnny_1', 'juli_1', 'john_2', 'juli_2', 'john_3']
+
+    
