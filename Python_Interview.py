@@ -46,6 +46,16 @@ def count_dict(li,repetition_count=3):
     nn=[num for num,count in dict_cnt.items() if count==repetition_count]
     return nn
 print(count_dict(li))
+
+method:-3
+
+li=[1,2,3,4,6,7,8,9,9,0,8,0,2,2,6,6,87,65,34,23]
+
+count_dict={}
+for n in li:
+    count_dict[n]=count_dict.get(n,0)+1
+
+print(count_dict)
 ---------------------------------------------------------------------->4<--------------------------------------------------------------------
 4.write python repeat the letter give string
 word="fdcaagahaajqaa"
