@@ -233,7 +233,12 @@ for i in duplicate:
 
 print(dupl)
 
+method:-2
+out={}
 
+for num in duplicate:
+    out[num]=out.get(num,0)+1
+print(out)
 --------------------------------------->10.weight of the give dicti<------------------------------------------
 10.
 dict={1:"apple", 2:"orange", 3:"peer"}
