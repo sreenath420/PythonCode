@@ -692,4 +692,17 @@ print(assign_counts(input))
 output :-
    ['john_1', 'johnny_1', 'juli_1', 'john_2', 'juli_2', 'john_3']
 
-    
+
+--------------------------------->non-repeative char in given string<----------------------------------------
+
+s = 'abcabcdefggh'
+
+
+# Use a set to track seen characters and a   list for the result to maintain order
+result=[char for char in s if s.count(char)==1]
+s=''.join(result)
+
+print(s)
+
+output:-
+defh
