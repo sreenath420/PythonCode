@@ -693,7 +693,7 @@ output :-
    ['john_1', 'johnny_1', 'juli_1', 'john_2', 'juli_2', 'john_3']
 
 
---------------------------------->non-repeative char in given string<----------------------------------------
+--------------------------------->30.non-repeative char in given string<----------------------------------------
 
 s = 'abcabcdefggh'
 
@@ -706,3 +706,27 @@ print(s)
 
 output:-
 defh
+
+--------------------------->31.occurance character count<-----------------------------------------
+input:-
+str = 'aabbccabc'
+output:-
+a2b2c2
+   
+char_count={}
+i=0
+while i<len(str):
+    char_current=str[i]
+    count =1
+    while i +1 <len(str) and str[i+1] ==char_current:
+        count +=1
+        i +=1
+    if count >1:
+
+        char_count[char_current]=count
+    i +=1
+
+output=''.join(f"{char}{count}" for char,count in char_count.items())
+print(output)
+
+
