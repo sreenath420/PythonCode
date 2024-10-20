@@ -729,4 +729,21 @@ while i<len(str):
 output=''.join(f"{char}{count}" for char,count in char_count.items())
 print(output)
 
+------------------------------------------>32.reverse words in given string<------------------------------------------------
+
+import re
+def reverse_words(text):
+    # Split the text into words, keeping the punctuation.
+    words = re.findall(r'\b\w+\b|\W', text)
+    print(words)
+    revers_str=''
+    for word in words:
+        if word.isalpha():
+            revers_str +=word[::-1]
+        else:
+            revers_str +=word
+    return ''.join(revers_str)
+
+input_text = "My, name. i.s Bas,aVaraj"
+print(reverse_words(input_text))
 
