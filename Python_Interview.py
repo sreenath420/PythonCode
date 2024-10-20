@@ -747,3 +747,7 @@ def reverse_words(text):
 input_text = "My, name. i.s Bas,aVaraj"
 print(reverse_words(input_text))
 
+output:-
+
+['My', ',', ' ', 'name', '.', ' ', 'i', '.', 's', ' ', 'Bas', ',', 'aVaraj']
+yM, eman. i.s saB,jaraVa
