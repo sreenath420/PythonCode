@@ -751,3 +751,18 @@ output:-
 
 ['My', ',', ' ', 'name', '.', ' ', 'i', '.', 's', ' ', 'Bas', ',', 'aVaraj']
 yM, eman. i.s saB,jaraVa
+          
+------------------------------------>33.How to give unique values in dictionary<------------------------------------------
+
+my_dict = {'a': 10,'b': 20,'c': 10,'d': 30,'e': 20}
+out_put={'a': 10, 'b': 20, 'd': 30}
+
+unique_dict={}
+unique_val=[]
+
+for num,char in my_dict.items():
+    if char not in unique_val:
+        unique_dict[num]=char
+        unique_val.append(char)
+print(unique_dict)
+
