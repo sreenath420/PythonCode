@@ -766,3 +766,16 @@ for num,char in my_dict.items():
         unique_val.append(char)
 print(unique_dict)
 
+---------------------------->34.only the words that contain the letter "a" by using list comprehension<-------------------------------------
+fruits=['mango', 'apple', 'kiwi', 'cherry', 'banana']
+ouput
+['mango', 'apple', 'banana']
+
+list_compreshion=[char for char in fruits if 'a' in char]
+print(list_compreshion)
+
+for num in (fruits):
+    if 'a' in num:
+        print(num)
+
+
