@@ -1,4 +1,4 @@
-------------------------------------------------------------->Generator<--------------------------------------------------------
+------------------------------------------------------------>Generator<--------------------------------------------------------
 1.Python generators are easy way of creating iterators.it generates values one at a time from a given sequence insted of returning the entire sequence at once.
 2.it is a special type of function which returns an iterator object.
 3.in a generates function, a yield statement is used rather than a return statement.
