@@ -779,4 +779,17 @@ for num in (fruits):
     if 'a' in num:
         print(num)
 
+ ------------------------------------>35.ount the number occurence by comprasion list1 with list2<-----------------------------------------------------
+
+ l1 = [1, 2, 3, 4, 5, 6, 7]
+l2 = [2, 4, 2, 7, 3, 9, 7, 7, 2, 2, 5]
+
+# Initialize dictionary with elements in l1 and a count of 0
+occurrences = {element: 0 for element in l1}
+for i in l2:
+    if i in occurrences:
+        
+        occurrences[i] +=1
+print(occurrences)
+
 
