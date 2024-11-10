@@ -788,8 +788,21 @@ l2 = [2, 4, 2, 7, 3, 9, 7, 7, 2, 2, 5]
 occurrences = {element: 0 for element in l1}
 for i in l2:
     if i in occurrences:
-        
-        occurrences[i] +=1
+          occurrences[i] +=1
 print(occurrences)
 
+  
+l1 = [1, 2, 3, 4, 5, 6, 7]
+l2 = [2, 4, 2, 7, 3, 9, 7, 7, 2, 2, 5,20]
+
+occurence={ele:0 for ele in l1}
+print(occurence)
+
+
+for num in l2:
+    if num in occurence:
+        occurence[num] +=1
+    else:
+        occurence[num] =1
+print(occurence)
 
