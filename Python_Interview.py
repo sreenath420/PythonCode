@@ -806,3 +806,32 @@ for num in l2:
         occurence[num] =1
 print(occurence)
 
+
+  ------------------------------------------------------>36<------------------------------------------------------------------
+  To find the maximum salary by department using Python, you can work with a dataset that contains employee details such 
+  as employee_id, name, department_name, and salary. This task can be efficiently handled using the pandas library, 
+  which provides powerful tools for data manipulation  
+ 
+import pandas as pd
+
+# Sample data
+data = {
+    'employee_id': [101, 102, 103, 104, 105],
+    'name': ['John', 'Alice', 'Bob', 'David', 'Eva'],
+    'department_name': ['HR', 'Engineering', 'Engineering', 'HR', 'Engineering'],
+    'salary': [50000, 70000, 80000, 60000, 75000]
+}
+
+# Creating a DataFrame
+df = pd.DataFrame(data)
+
+# Group by department and find the maximum salary
+max_salary_by_department = df.groupby('department_name')['salary'].max().reset_index()
+
+output
+  department_name  salary
+0     Engineering   80000
+1              HR   60000
+
+# Display the result
+print(max_salary_by_department)
