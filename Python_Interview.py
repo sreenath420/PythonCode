@@ -835,3 +835,12 @@ output
 
 # Display the result
 print(max_salary_by_department)
+
+----------------------------------------------->37<--------------------------------------------------
+
+a=[1,2,3,4,5,6]
+output
+b=[1:1,2:4,3:9,4:16,5:25]
+
+dic={i:i*i for i in a}
+print(dic)
