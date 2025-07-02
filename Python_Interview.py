@@ -844,3 +844,13 @@ b=[1:1,2:4,3:9,4:16,5:25]
 
 dic={i:i*i for i in a}
 print(dic)
+
+
+-------------------------------------->38.Reverse staring postion and enidng position<-----------------------------
+l1=[8, 2, 3, 4, 5, 6, 7, 1]
+output:
+[8, 2, 3, 4, 5, 6, 7, 1]
+Program
+output=[l1[0]]+l1[1:-1]+[l1[-1]]
+print(output)
+[8, 2, 3, 4, 5, 6, 7, 1]
