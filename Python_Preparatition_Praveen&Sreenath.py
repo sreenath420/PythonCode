@@ -25,3 +25,18 @@ for i in list:
     if d=='csv':
         result.append(i)
 print(result)
+
+----------------------------------------------->Problem_3<---------------------------------------------------------------
+
+data = [
+    {"name": "Alice", "city": "Delhi", "age": 25},
+    {"name": "Bob", "city": "Mumbai", "age": 30},
+    {"name": "Charlie", "city": "Delhi", "age": 22},
+    {"name": "David", "city": "Bangalore", "age": 28},
+    {"name": "Eve", "city": "Mumbai", "age": 26}
+]
+
+result=sorted(data,key=lambda x:(x['city'],x['age']))
+
+print(result)
+
