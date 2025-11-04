@@ -92,7 +92,60 @@ output
 }
 
 
+---------------->Program_8<---------------------
+
+old = {'a': 10, 'b': 20, 'c': 30}
+result={x:y+10 for x,y in old.items()}
+print(result)
+
+output:-
+
+{'a': 20, 'b': 30, 'c': 40}
+
+-------------->Program_9<------------------
+Create a 3×3 matrix in dictionary form
+
+matrix = {i: {j: i*j for j in range(1, 4)} for i in range(1, 4)}
+print(matrix)
+# Output:
+# {1: {1: 1, 2: 2, 3: 3},
+#  2: {1: 2, 2: 4, 3: 6},
+#  3: {1: 3, 2: 6, 3: 9}}
+
+------------->Program_10<---------------------
+
+Convert list of tuples into dictionary
+
+pairs = [("a", 1), ("b", 2), ("c", 3)]
+result={x:y for x,y in pairs}
+print(result)
+output:-
+{'a': 1, 'b': 2, 'c': 3}
 
 
+----------->Program_11<----------------------
+
+Map numbers to “Even” or “Odd”:
+
+result={x:("even" if x%2==0 else "Odd") for x in range(1,10)}
+print(result)
+
+ouput
+{1: 'Odd', 2: 'even', 3: 'Odd', 4: 'even', 5: 'Odd', 6: 'even', 7: 'Odd', 8: 'even', 9: 'Odd'}
+
+------------->Program_11<------------------
+
+input =['apple', 'banana', 'kiwi']
+#Expected output: {'apple': 5, 'banana': 6, 'kiwi': 4}
+result={x:len(x) for x in input}
+print(result)
+
+Normal for loop 
+
+dict={}
+for i in input:
+    dict[i]=len(i)
+
+print(dict)
 
 
