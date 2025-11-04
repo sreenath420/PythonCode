@@ -56,7 +56,7 @@ Convert names to uppercase and double the values.
 
 students = {'john': 10, 'sara': 20, 'mike': 30}
 
-result={k.capitalize():v*2 for k,v in students.items()}
+result={k.upper():v*2 for k,v in students.items()}
 
 print(result)
 
@@ -90,6 +90,7 @@ output
   2: {1: 2, 2: 4, 3: 6, 4: 8, 5: 10},
   3: {1: 3, 2: 6, 3: 9, 4: 12, 5: 15}
 }
+
 
 
 
