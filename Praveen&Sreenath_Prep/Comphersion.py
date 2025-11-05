@@ -1,3 +1,4 @@
+----------------------------------------->Part-A(Comprehension in dictionary)
 What is Dictionary Comprehension?
 
 A dictionary comprehension allows you to create a dictionary from an iterable (like a list, tuple, or another dictionary) in a single readable line.
@@ -56,7 +57,7 @@ Convert names to uppercase and double the values.
 
 students = {'john': 10, 'sara': 20, 'mike': 30}
 
-result={k.upper():v*2 for k,v in students.items()}
+result={k.capitalize():v*2 for k,v in students.items()}
 
 print(result)
 
@@ -90,6 +91,7 @@ output
   2: {1: 2, 2: 4, 3: 6, 4: 8, 5: 10},
   3: {1: 3, 2: 6, 3: 9, 4: 12, 5: 15}
 }
+
 
 
 ---------------->Program_8<---------------------
@@ -149,3 +151,11 @@ for i in input:
 print(dict)
 
 
+--------------->Program_12<--------------------------
+
+data = {'a': [1, 2], 'b': [3, 4]}
+# {1: 'a', 2: 'a', 3: 'b', 4: 'b'}
+
+
+result={val:key for key,values in data.items() for val in values}
+print(result)
