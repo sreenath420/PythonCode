@@ -874,4 +874,22 @@ print(a)  # [1, 2, [99, 4]]  ← changed!
 print(b)  # [1, 2, [99, 4]]
 
 
+ Deep Copy:-
+
+ A deep copy creates a new object AND copies all nested objects independently.
+
+👉 Changes to nested data do NOT reflect in the original.
+
+ import copy
+
+a = [1, 2, [3, 4]]
+b = copy.deepcopy(a)  # deep copy
+
+b[2][0] = 99
+
+print(a)  # [1, 2, [3, 4]]   ← NOT changed
+print(b)  # [1, 2, [99, 4]]
+
+
  
+
