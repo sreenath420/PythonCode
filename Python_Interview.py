@@ -854,3 +854,24 @@ Program
 output=[l1[0]]+l1[1:-1]+[l1[-1]]
 print(output)
 [8, 2, 3, 4, 5, 6, 7, 1]
+
+ ------------------------------->39.Explain about Shallow Copy and Deep Copy <---------------------------------------
+Shallow Copy:-
+ 
+ A shallow copy creates a new object, but does NOT copy the inner (nested) objects.
+Instead, it references the same inner objects.
+
+👉 Changes to nested data WILL reflect in the original.
+
+ import copy
+
+a = [1, 2, [3, 4]]
+b = copy.copy(a)  # shallow copy
+
+b[2][0] = 99
+
+print(a)  # [1, 2, [99, 4]]  ← changed!
+print(b)  # [1, 2, [99, 4]]
+
+
+ 
