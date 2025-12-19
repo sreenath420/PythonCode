@@ -891,5 +891,20 @@ print(a)  # [1, 2, [3, 4]]   ← NOT changed
 print(b)  # [1, 2, [99, 4]]
 
 
+ ---------------------------------->Remove Duplicates in String<---------------------------
+
+ name="Programming"
+result=""
+seen=set()
+for ch in name:
+    if ch not in seen:
+        result +=ch
+        seen.add(ch)
+print(result)
+
+ Output
+
+ Progamin
  
+
 
