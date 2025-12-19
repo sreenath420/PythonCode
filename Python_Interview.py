@@ -907,4 +907,38 @@ print(result)
  Progamin
  
 
+----------------------------------->Max Product List values<----------------------------------
+ def max_product_of_three(lst):
+      product=1
+      for i in lst:
+         product
+	#Write your code here
+if __name__ == "__main__":
+product=1
+
+    if max_product_of_three([1, 2, 3, 4]) == 24:
+       if len
+            
+        print("Test Case 1: Successful")
+    else:
+        print("Test case 1: Failed")
+ 
+    if max_product_of_three([-10, -10, 5, 2]) == 500:
+        print("Test Case 2: Successful")
+    else:
+        print("Test case 2: Failed")
+ 
+    if max_product_of_three([0, 1, -1, 2, -2]) == 4:
+        print("Test Case 3: Successful")
+    else:
+        print("Test case 3: Failed")
+ 
+    if max_product_of_three([-6, 2, 3, -4, -5, 1]) == 90:
+        print("Test Case 4: Successful")
+    else:
+        print("Test case 4: Failed")
+    if max_product_of_three([-4, -5, -3, -2, -1, 0, 1, 2, 5, 4, 3]) == 100:
+        print("Test Case 5: Successful")
+    else:
+        print("Test case 5: Failed")
 
