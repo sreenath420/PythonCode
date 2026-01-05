@@ -153,3 +153,22 @@ for i in a:
     if i not in d:
         break
 print(i)
+
+------------------------------->4.Progarm<---------------------------------------------------------------------
+# 4️Replace duplicate characters with *
+a = 'aabcbddeefhgh'
+
+b = []
+c = str(b)
+for i in a:
+    if i not in b:
+        b.append(i)
+    else:
+        b.append('*')
+
+print(b)
+
+s = ''
+for i in b:
+    s = s + i
+print(s)
