@@ -132,3 +132,24 @@ print(counter)
 
 output:-
 {'f': 1, 'd': 1, 'c': 1, 'a': 7, 'g': 1, 'h': 1, 'j': 1, 'q': 1}
+
+-------------------------------->3.Program<---------------------------------------------------------
+find the first non repeating character
+
+a = 'aabcbddeefhhgz'
+b = {}
+#
+#print(f)
+for i in a:
+    if i not in b:
+        b[i] = 1
+    else:
+        b[i] = b[i] + 1
+print(b)
+
+d = [c for c, v in b.items() if v > 1]
+print(d)
+for i in a:
+    if i not in d:
+        break
+print(i)
