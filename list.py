@@ -2,8 +2,11 @@
 -------------------------------------------------------------------------Python_List-------------------------------------------------------------
 
 
-Python Lists are just like dynamically sized arrays, declared in other languages (vector in C++ and ArrayList in Java). In simple language, a list is a collection of things, enclosed in [ ] and separated by commas.
+List is a built-in data structure used to store an ordered collection of items. They are dynamic, resizable and capable of storing multiple data types.
 
+Mutable: list elements can be changed, updated, added, or removed after the list is created.
+Ordered: elements maintain the order in which they are inserted.
+Index-based: elements are accessed using their position, starting from index 0.
 example
 Var = ["Geeks", "for", "Geeks"]
 print(Var)
